@@ -23,7 +23,7 @@ function App() {
       <br/>
       <p className='text-[25px]'>ჩვენთან თქვენ ისწავლით პროგრამირებას უმაღლეს დონეზე.<br/>
       კურსის დასრულებისას თქვენ შეგეძლებათ რომ შექმნათ სრული ვებსაიტები/თამაშები.<br/>
-      იქნებით Full-Stack Developer და იქნებით დასაქმდებით ტოპ კომპანიებში.<br/>
+      იქნებით Full-Stack Developer და დასაქმდებით ტოპ კომპანიებში.<br/>
       გვაქვს სხვადასხვა კურსები:</p>
       <br/>
       <ul className='text-[25px] bg-[#1d9e1d] p-5 rounded-[15px] w-70 shadow'>
@@ -53,7 +53,7 @@ function App() {
     <h1 className='text-center text-[50px]' id='courses'>GOA-ს მთავარი კურსები</h1>
     <br/>
     <br/>
-  <div className='flex flex-row gap-30 justify-around'>
+  <div className='flex flex-row gap-30 justify-around p-10'>
     <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
       <h1 className='text-[40px]'>Web Development</h1>
       <br/>
@@ -65,10 +65,11 @@ function App() {
       <p>კვირაში სამჯერ: 390₾</p>
       <p>კვირაში ოთხჯერ: 490₾</p>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'>რეგისტრაცია</button>
+      <br/>
+      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
 
-    <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#0a92f4]'>
+    <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
       <h1 className='text-[40px]'>Game Development</h1>
       <br/>
       <p>ამ კურსზე შეისწავლით Roblox Studio-ში<br/>
@@ -79,10 +80,10 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'>რეგისტრაცია</button>
+      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
 
-    <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#b11724]'>
+    <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
       <h1 className='text-[40px]'>Robotics & Engineering</h1>
       <br/>
       <p>ამ კურსზე შეისწავლით რობოტიკას და ინჟინერიას,<br/>
@@ -93,10 +94,10 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'>რეგისტრაცია</button>
+      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
 
-    <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#000000] text-[white]'>
+    <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234] '>
       <h1 className='text-[40px]'>AI & Algorithms, C++</h1>
       <br/>
       <p>ამ კურსზე შეისწავლით ხელოვნურ ინტელექტს,<br/>
@@ -108,14 +109,18 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'>რეგისტრაცია</button>
+      <br/>
+      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
   </div>
   <br/>
   <br/>
   
   <h1 className='text-center text-[50px] font-bold' id='registration'>რეგისტრაცია</h1>
-  <div className='flex justify-center items-center h-screen w-full max-lg:flex-col'>
+  <br/>
+  <br/>
+  <br/>
+  <div className='flex justify-center items-center h-110 w-full max-lg:flex-col p-50'>
     <img src="/goaimg.png" alt="" className='h-125.5 rounded-l-[15px]'/>
     <div className='flex justify-center items-center bg-[#023202] flex-col p-10 rounded-r-[15px]'>
       <h1 className='text-[white] text-[25px] font-bold'>კურსზე დარეგისტრირება</h1>
@@ -130,16 +135,19 @@ function App() {
         <button className='bg-[white] w-[20rem] h-12 rounded-[15px]'>დარეგისტრირება</button>
         <br/><br/>
         <select className='bg-[white] w-[20rem] h-12 rounded-[15px]'>
-          <option>ვებსაიტების დეველოპმენტი/შექმნა</option>
-          <option>თამაშების დეველოპმენტი/შექმნა</option>
-          <option>ხელოვნური ინტელექტი და ალგორითმები</option>
+          <option>Web Development</option>
+          <option>Game Development</option>
+          <option>AI & Algorithms</option>
           <option>SQL</option>
-          <option>გრაფიკული დიზაინი</option>
+          <option>Graphic Design</option>
           <option>GOA Martial Arts - MMA</option>
         </select>
       </form>
     </div>
   </div>
+  <br/>
+  <br/>
+  <br/>
   </>)
 }
 
