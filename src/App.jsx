@@ -8,10 +8,10 @@ function App() {
     <div className='flex justify-between w-full max-lg:flex-col bg-[#014601] text-[30px] text-[white] fixed'>
       <h1 className='p-10'>GOAL-<span className='text-[#06d806]'>ORIENTED</span> ACADEMY</h1>
       <div className='flex justify-between flex-row gap-50 p-10'>
-        <button className='cursor-pointer'><a href="#top">მთავარი</a></button>
-        <button className='cursor-pointer'>კონტაქტი</button>
-        <button className='cursor-pointer'><a href="#registration">რეგისტრაცია</a></button>
-        <button className='cursor-pointer'><a href="#courses">კურსები</a></button>
+        <button className='cursor-pointer hover:text-[#1cb61c]'><a href="#top">მთავარი</a></button>
+        <button className='cursor-pointer hover:text-[#1cb61c]'><a href="#contact">კონტაქტი</a></button>
+        <button className='cursor-pointer hover:text-[#1cb61c]'><a href="#registration">რეგისტრაცია</a></button>
+        <button className='cursor-pointer hover:text-[#1cb61c]'><a href="#courses">კურსები</a></button>
       </div>
       
   </div>
@@ -47,11 +47,9 @@ function App() {
     <br/>
     <video className='w-300 h-250' controls src="/goa video.mp4"></video>
   </div>
-  <br/>
 
 
     <h1 className='text-center text-[50px]' id='courses'>GOA-ს მთავარი კურსები</h1>
-    <br/>
     <br/>
   <div className='flex flex-row gap-30 justify-around p-10'>
     <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
@@ -66,7 +64,7 @@ function App() {
       <p>კვირაში ოთხჯერ: 490₾</p>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
+      <button className='bg-[#13c913] p-3 rounded-[15px] hover:bg-[#159115]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
 
     <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
@@ -80,7 +78,7 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
+      <button className='bg-[#13c913] p-3 rounded-[15px] hover:bg-[#159115]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
 
     <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
@@ -94,7 +92,7 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
+      <button className='bg-[#13c913] p-3 rounded-[15px] hover:bg-[#159115]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
 
     <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234] '>
@@ -110,7 +108,7 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <button className='bg-[#13c913] p-3 rounded-[15px]'><a href="#registration">რეგისტრაცია</a></button>
+      <button className='bg-[#13c913] p-3 rounded-[15px] hover:bg-[#159115]'><a href="#registration">რეგისტრაცია</a></button>
     </div>
   </div>
   <br/>
@@ -132,8 +130,6 @@ function App() {
         <br/><br/>
         <input type="email" placeholder='ელექტრონული ფოსტა' className='bg-[white] w-[20rem] h-12 rounded-[15px]'/>
         <br/><br/>
-        <button className='bg-[white] w-[20rem] h-12 rounded-[15px]'>დარეგისტრირება</button>
-        <br/><br/>
         <select className='bg-[white] w-[20rem] h-12 rounded-[15px]'>
           <option>Web Development</option>
           <option>Game Development</option>
@@ -142,12 +138,23 @@ function App() {
           <option>Graphic Design</option>
           <option>GOA Martial Arts - MMA</option>
         </select>
+        <br/><br/>
+        <button className='bg-[#14b814] w-[20rem] h-12 rounded-[15px] hover:bg-[#159115]'>დარეგისტრირება</button>
       </form>
     </div>
   </div>
   <br/>
   <br/>
   <br/>
+  <br/>
+  <div className='flex justify-center items-center flex-col text-[30px] p-10 font-bold'>
+    <h1 id='contact' className='text-[40px]'>დაგვეკონტაქტეთ:</h1>
+    <br/>
+    <p>GOA Facebook - <a href="https://www.facebook.com/nika11keshelava" className='hover:text-[green]'>Goal-Oriented Academy</a></p>
+    <p>ბატონი ნიკას FB - <a className='hover:text-[green]' href="https://www.facebook.com/NikaGoaKeshelava?locale=ka_GE">Nika Keshelava</a></p>
+  </div>
+  <br/>
+  <p className='flex justify-center items-center flex-col text-[30px] p-10'>Goal-Oriented Academy All Rights Reserved 2025</p>
   </>)
 }
 
