@@ -2,7 +2,7 @@ function Courses() {
   return (<>
     <h1 className='text-center text-[50px]' id='courses'>GOA-ს მთავარი კურსები</h1>
     <br/>
-  <div className='flex flex-row gap-30 justify-around p-10'>
+  <div className='flex flex-row gap-30 justify-around p-10 max-lg:flex-col'>
     <div className='p-10 text-[30px] w-150 border-5 rounded-[15px] bg-[#089234]'>
       <h1 className='text-[40px]'>Web Development</h1>
       <br/>
